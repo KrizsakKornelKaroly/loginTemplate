@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-lostpass',
@@ -9,7 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './lostpass.component.scss'
 })
 export class LostpassComponent {
+
+    constructor(
+      private api: ApiService
+    ) { }
   send(){
-    
+
   }
 }
